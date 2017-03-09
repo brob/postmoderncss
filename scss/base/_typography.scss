@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans|Sansita:400,700');
+
+@mixin primary-font($weight: 400, $style: normal){
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+@mixin secondary-font($weight:400, $style: normal) {
+    font-family: 'Sansita', cursive;
+    font-style: $style;
+    font-weight: $weight;
+}
+em {
+    @include primary-font($style: italic);
+}
+strong {
+    @include primary-font($style: bold);
+}
+$base-font: calc(18px + .5vw);
+$base-line-height: calc(1em + .7vw);
+
+body {
+    @include primary-font;
+    font-size: $base-font;
+    line-height: $base-line-height
+}
+
+
+h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+    @include primary-font;
+
+}
+
+h3 {
+    @include secondary-font;
+    font-size: calc(1rem + 2vw);
+    color: $brand-light;
+    margin-bottom: .75rem;
+}
+h2 {
+    font-size: calc(1.6em + .5vw);
+
+
+}
+p {
+    margin-bottom: calc(1rem + .3vw);
+}
+.subhead {
+    font-size: calc(1.5rem + .5vw);
+    text-align: center;
+}

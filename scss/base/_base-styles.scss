@@ -1,0 +1,20 @@
+body {
+    background: $brand-neutral;
+    color: $dark-gray;
+}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    transition: .5s ease-out;
+    text-decoration: none;
+    color: $brand-accent;
+    &:hover {
+        color: darken($brand-accent, 15%);
+    }
+}
+
+img {
+    max-width: 100%;
+}

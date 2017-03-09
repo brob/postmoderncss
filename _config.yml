@@ -1,0 +1,21 @@
+---
+title: Post-Modern CSS
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+author: Bryan Robinson
+author_email: bryanlrobinson@gmail.com
+url: http://postmoderncss.com
+permalink: "/blog/:year/:month/:day/:title/"
+markdown: kramdown
+highlight_options:
+  linenos: true
+exclude:
+- README.markdown
+- package.json
+- grunt.js
+- Gruntfile.js
+- Gruntfile.coffee
+- node_modules
